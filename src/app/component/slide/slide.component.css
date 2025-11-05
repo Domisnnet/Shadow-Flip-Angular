@@ -1,0 +1,13 @@
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.btn-seta {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
