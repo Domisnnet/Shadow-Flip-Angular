@@ -1,0 +1,18 @@
+<main class="slider">
+  <button class="btn-seta btn-voltar" (click)="previous()">
+    ←
+  </button>
+
+  <ul class="lista-personagens">
+    <li *ngFor="let card of cards; let i = index">
+      <app-card-item
+        [cardItem]="card"
+        [cardIndex]="i">
+      </app-card-item>
+    </li>
+  </ul>
+
+  <button class="btn-seta btn-avancar" (click)="next()">
+    →
+  </button>
+</main>
