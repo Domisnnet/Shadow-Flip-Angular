@@ -3,9 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-slide',
   imports: [],
-  templateUrl: './slide.html',
-  styleUrl: './slide.css',
+  templateUrl: './slide.component.html',
+  styleUrl: './slide.component.css',
 })
-export class Slide {
-
-}
+export class Slide {}

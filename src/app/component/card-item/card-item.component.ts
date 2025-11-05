@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card-item.component.css']
 })
 export class CardItemComponent {
-[x: string]: any;
-  @Input() cardItem: any;
-  @Input() cardIndex!: number;
+  @Input() cards: any[] = [];
+  @Input() index: number = 0;
+  @Input() card: any;
 }
