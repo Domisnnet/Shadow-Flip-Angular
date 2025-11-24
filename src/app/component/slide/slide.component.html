@@ -1,31 +1,18 @@
-import { Component } from '@angular/core';
-import { CardItemComponent } from '../card-item/card-item.component';
+<main class="slider">
+  <button class="btn-seta btn-voltar" (click)="previous()">
+    ←
+  </button>
 
-@Component({
-  selector: 'app-slide',
-  standalone: true,
-  imports: [CardItemComponent],
-  templateUrl: './slide.component.html',
-  styleUrls: ['./slide.component.css']
-})
-export class SlideComponent {
-  cards = [
-    { name: 'Personagem 1', image: 'assets/imagens/aegis-knight.png' },
-    { name: 'Personagem 2', image: 'assets/imagens/archmage.png' },
-    { name: 'Personagem 3', image: 'assets/imagens/cosmos-sentinel.png' }
-    { name: 'Personagem 4', image: 'assets/imagens/cyberblade-paladin.png' }
-    { name: 'Personagem 5', image: 'assets/imagens/mechadragon.png' }
-    { name: 'Personagem 6', image: 'assets/imagens/nebuladragon.png' }
-    { name: 'Personagem 7', image: 'assets/imagens/stormbringer.png' }
-  ];
+  <ul class="lista-personagens">
+    @for (card of cards; track card; let i = $index) {
+      <app-card-item
+        [card]="card"
+        [cardIndex]="i">
+      </app-card-item>
+    }
+  </ul>
 
-  currentIndex = 0;
-
-  next() {
-    this.currentIndex = (this.currentIndex + 1) % this.cards.length;
-  }
-
-  previous() {
-    this.currentIndex = (this.currentIndex - 1 + this.cards.length) % this.cards.length;
-  }
-}
+  <button class="btn-seta btn-avancar" (click)="next()">
+    →
+  </button>
+</main>

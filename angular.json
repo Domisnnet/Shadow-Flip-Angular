@@ -22,10 +22,15 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/reset.css",
+              "src/assets/css/fontes.css",
+              "src/assets/css/estilos.css",
+              "src/assets/css/responsivo.css",
+              "src/styles.scss"
             ]
           },
           "configurations": {
@@ -82,7 +87,11 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/reset.css",
+              "src/assets/css/fontes.css",
+              "src/assets/css/estilos.css",
+              "src/assets/css/responsivo.css",
+              "src/styles.scss"
             ]
           }
         }
