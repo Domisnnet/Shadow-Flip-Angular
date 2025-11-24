@@ -26,10 +26,6 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/reset.css",
-              "src/assets/css/fontes.css",
-              "src/assets/css/estilos.css",
-              "src/assets/css/responsivo.css",
               "src/styles.scss"
             ]
           },
@@ -87,10 +83,6 @@
               }
             ],
             "styles": [
-              "src/assets/css/reset.css",
-              "src/assets/css/fontes.css",
-              "src/assets/css/estilos.css",
-              "src/assets/css/responsivo.css",
               "src/styles.scss"
             ]
           }
