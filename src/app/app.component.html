@@ -6,35 +6,49 @@
   <div class="lista-personagens">
     @for (card of cards; track card.id; let i = $index) {
       <div 
-        class="cartao {{ 'fundo-' + (i + 1) }}" 
+        class="cartao" 
         [class.selecionado]="i === cardAtual()"
+        [class.virado]="i === cardAtual() && cardVirado()"
+        (click)="i === cardAtual() && virarCard()"
       >
-        <h2 class="nome">{{ card.name }}</h2>
-        
-        <div class="nivel-carta">
-          @for (n of [].constructor(card.nivel); track $index) {
-            <div class="estrela"></div>
-          }
+        <!-- Face Frontal -->
+        <div class="face face-frente {{ 'fundo-' + (i + 1) }}">
+          <h2 class="nome">{{ card.name }}</h2>
+          
+          <div class="nivel-carta">
+            @for (n of [].constructor(card.nivel); track $index) {
+              <div class="estrela"></div>
+            }
+          </div>
+
+          <img 
+            class="imagem-carta" 
+            [ngSrc]="'assets/images/' + card.image" 
+            [alt]="card.alt" 
+            width="260" 
+            height="280"
+            priority
+          >
+
+          <div class="informacoes">
+            <div class="descricao">
+              <p>{{ card.descricao }}</p>
+            </div>
+            <div class="informacoes-ataque">
+              <span>ATK/ {{ card.atk }}</span>
+              <span>/</span>
+              <span>DEF/ {{ card.def }}</span>
+            </div>
+          </div>
         </div>
 
-        <img 
-          class="imagem-carta" 
-          [ngSrc]="'assets/images/' + card.image" 
-          [alt]="card.alt" 
-          width="260" 
-          height="280"
-          priority
-        >
-
-        <div class="informacoes">
-          <div class="descricao">
-            <p>{{ card.descricao }}</p>
-          </div>
-          <div class="informacoes-ataque">
-            <span> ATAQUE / {{ card.atk }}</span>
-            <span> | </span>
-            <span> DEFESA / {{ card.def }}</span>
-          </div>
+        <!-- Face do Verso -->
+        <div class="face face-verso">
+          <img 
+            src="assets/images/fundo-carta.jpg" 
+            alt="Verso da Carta" 
+            class="imagem-verso"
+          >
         </div>
 
       </div>

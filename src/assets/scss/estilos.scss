@@ -51,22 +51,23 @@ body {
   border-radius: 10px;
   position: relative;
   padding: 12px;
+  perspective: 1000px; 
 }
 
 /* 🎴 =====================
-   Cartões e Conteúdo
+   Cartões e Animação 3D
 ======================== */
 .cartao {
   opacity: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 12px 12px 10px;
-  gap: 5px;
   position: absolute;
+  top: 12px;
+  left: 12px;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
   border-radius: 8px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
 }
 
 .cartao.selecionado {
@@ -74,10 +75,37 @@ body {
   z-index: 1;
 }
 
-.cartao.virar {
-  transform: rotateZ(90deg);
-  transform-origin: center;
-  transition: transform 0.3s ease-in-out;
+.cartao.virado {
+  transform: rotateX(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+}
+
+.face-frente {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 12px 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.face-verso {
+  transform: rotateX(180deg);
+  background-color: black;
+}
+
+.imagem-verso {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .cartao .nome {
@@ -122,6 +150,7 @@ body {
   text-align: left;
   line-height: 1.5;
   padding: 5px;
+  margin-top: auto; 
 }
 
 .cartao .informacoes .descricao {
@@ -187,12 +216,6 @@ body {
 /* 🖼️ =====================
    Fundos e Temas
 ======================== */
-[class^="fundo-"] {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .fundo-1 { background-image: url(../images/fundo-1.jpg); }
 .fundo-2 { background-image: url(../images/fundo-2.jpg); }
 .fundo-3 { background-image: url(../images/fundo-3.jpg); }
@@ -201,11 +224,6 @@ body {
 .fundo-6 { background-image: url(../images/fundo-6.jpg); }
 .fundo-7 { background-image: url(../images/fundo-7.jpg); }
 
-.carta-virada {
-  display: none;
-  border-radius: 8px;
-}
-
 /* 🧼 =====================
    Utilitários e Scrollbar
 ======================== */
@@ -213,7 +231,6 @@ body {
   display: none !important;
 }
 
-/* Scrollbar personalizada apenas para conteúdo scrollável */
 .descricao::-webkit-scrollbar {
   width: 8px;
 }

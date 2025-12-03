@@ -13,8 +13,14 @@ export class AppComponent {
   private cardService = inject(CardService);
   public cards: Card[] = this.cardService.getCards();
   public cardAtual = signal(0);
+  public cardVirado = signal(false);
+
+  virarCard(): void {
+    this.cardVirado.update(v => !v);
+  }
 
   avancar(): void {
+    this.cardVirado.set(false); // Reseta o flip
     if (this.cardAtual() === this.cards.length - 1) {
       this.cardAtual.set(0);
     } else {
@@ -23,6 +29,7 @@ export class AppComponent {
   }
 
   voltar(): void {
+    this.cardVirado.set(false); // Reseta o flip
     if (this.cardAtual() === 0) {
       this.cardAtual.set(this.cards.length - 1);
     } else {
