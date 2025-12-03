@@ -10,13 +10,13 @@ import { CardItemComponent } from '../card-item/card-item.component';
 })
 export class SlideComponent {
   cards = [
-    { name: 'Personagem 1', image: 'assets/imagens/aegis-knight.png' },
-    { name: 'Personagem 2', image: 'assets/imagens/archmage.png' },
-    { name: 'Personagem 3', image: 'assets/imagens/cosmos-sentinel.png' },
-    { name: 'Personagem 4', image: 'assets/imagens/cyberblade-paladin.png' },
-    { name: 'Personagem 5', image: 'assets/imagens/mechadragon.png' },
-    { name: 'Personagem 6', image: 'assets/imagens/nebuladragon.png' },
-    { name: 'Personagem 7', image: 'assets/imagens/stormbringer.png' }
+    { image: 'assets/images/aegis-knight.png' },
+    { image: 'assets/images/archmage.png' },
+    { image: 'assets/images/cosmos-sentinel.png' },
+    { image: 'assets/images/cyberblade-paladin.png' },
+    { image: 'assets/images/mechadragon.png' },
+    { image: 'assets/images/nebuladragon.png' },
+    { image: 'assets/images/stormbringer.png' }
   ];
 
   currentIndex = 0;
