@@ -1,0 +1,4 @@
+.cartao {
+  position: relative !important; /* Anula o position: absolute global */
+  opacity: 1 !important; /* Garante que o cartão esteja sempre visível */
+}

@@ -1,31 +1,32 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { CardService } from '../../services/card.service';
 import { CardItemComponent } from '../card-item/card-item.component';
+import { Card } from '../../models/card.model';
 
 @Component({
   selector: 'app-slide',
-  imports: [CardItemComponent],
   templateUrl: './slide.component.html',
   styleUrls: ['./slide.component.css'],
+  imports: [CardItemComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SlideComponent {
-  cards = [
-    { image: 'assets/images/aegis-knight.png' },
-    { image: 'assets/images/archmage.png' },
-    { image: 'assets/images/cosmos-sentinel.png' },
-    { image: 'assets/images/cyberblade-paladin.png' },
-    { image: 'assets/images/mechadragon.png' },
-    { image: 'assets/images/nebuladragon.png' },
-    { image: 'assets/images/stormbringer.png' }
-  ];
+  private cardService = inject(CardService);
+  public cards: Card[] = this.cardService.getCards();
 
-  currentIndex = 0;
+  // O currentIndex agora é um sinal
+  public currentIndex = signal(0);
 
-  next() {
-    this.currentIndex = (this.currentIndex + 1) % this.cards.length;
+  // O selectedCard é um sinal computado, derivado do currentIndex
+  public selectedCard = computed(() => this.cards[this.currentIndex()]);
+
+  previous(): void {
+    // Atualiza o sinal para o item anterior, com limite em 0
+    this.currentIndex.update(index => (index > 0 ? index - 1 : 0));
   }
 
-  previous() {
-    this.currentIndex = (this.currentIndex - 1 + this.cards.length) % this.cards.length;
+  next(): void {
+    // Atualiza o sinal para o próximo item, com limite no final da lista
+    this.currentIndex.update(index => (index < this.cards.length - 1 ? index + 1 : index));
   }
 }

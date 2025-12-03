@@ -1,0 +1,5 @@
+<ul class="lista-personagens">
+  @for (card of cards(); track card.id) {
+    <app-card-item [card]="card" [cardIndex]="$index"></app-card-item>
+  }
+</ul>

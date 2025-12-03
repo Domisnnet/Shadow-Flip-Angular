@@ -1,13 +1,44 @@
 .slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 0; /* Anula o gap global */
 }
-  
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .btn-seta {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-seta:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.btn-voltar {
+  left: -20px;
+}
+
+.btn-avancar {
+  right: -20px;
 }

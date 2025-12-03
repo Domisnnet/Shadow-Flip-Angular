@@ -1,18 +1,19 @@
 <main class="slider">
-  <button class="btn-seta btn-voltar" (click)="previous()">
+  <button class="btn-seta btn-voltar" (click)="previous()" [disabled]="currentIndex() === 0">
     ←
   </button>
 
-  <ul class="lista-personagens">
-    @for (card of cards; track card; let i = $index) {
+  <!-- Container direto para o card, para garantir a centralização -->
+  <div class="card-container">
+    @if (selectedCard()) {
       <app-card-item
-        [card]="card"
-        [cardIndex]="i">
+        [card]="selectedCard()"
+        [cardIndex]="currentIndex()">
       </app-card-item>
     }
-  </ul>
+  </div>
 
-  <button class="btn-seta btn-avancar" (click)="next()">
+  <button class="btn-seta btn-avancar" (click)="next()" [disabled]="currentIndex() === cards.length - 1">
     →
   </button>
 </main>

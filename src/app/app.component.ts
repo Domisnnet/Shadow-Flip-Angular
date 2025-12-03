@@ -1,14 +1,17 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { SlideComponent } from './component/slide/slide.component';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { CardService } from './services/card.service';
+import { Card } from './models/card.model';
+import { SlideComponent } from './component/slide/slide.component'; // Importa o SlideComponent
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, SlideComponent],
+  // Adiciona o SlideComponent aos imports
+  imports: [SlideComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-  title = 'angular-project';
+  private cardService = inject(CardService);
+  public cards: Card[] = this.cardService.getCards();
 }
