@@ -12,7 +12,7 @@ body {
 
 body {
   font-family: "Yugioh", serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/fundo-site.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/fundo-site.jpg) center/cover no-repeat;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -100,7 +100,7 @@ body {
 .cartao .estrela {
   width: 20px;
   height: 20px;
-  background: url(../assets/nivel-carta.png) center/contain no-repeat;
+  background: url(../images/nivel-carta.png) center/contain no-repeat;
   display: inline-block;
 }
 
@@ -192,13 +192,13 @@ body {
   background-position: center;
 }
 
-.fundo-1 { background-image: url(../assets/fundo-1.jpg); }
-.fundo-2 { background-image: url(../assets/fundo-2.jpg); }
-.fundo-3 { background-image: url(../assets/fundo-3.jpg); }
-.fundo-4 { background-image: url(../assets/fundo-4.jpg); }
-.fundo-5 { background-image: url(../assets/fundo-5.jpg); }
-.fundo-6 { background-image: url(../assets/fundo-6.jpg); }
-.fundo-7 { background-image: url(../assets/fundo-7.jpg); }
+.fundo-1 { background-image: url(../images/fundo-1.jpg); }
+.fundo-2 { background-image: url(../images/fundo-2.jpg); }
+.fundo-3 { background-image: url(../images/fundo-3.jpg); }
+.fundo-4 { background-image: url(../images/fundo-4.jpg); }
+.fundo-5 { background-image: url(../images/fundo-5.jpg); }
+.fundo-6 { background-image: url(../images/fundo-6.jpg); }
+.fundo-7 { background-image: url(../images/fundo-7.jpg); }
 
 .carta-virada {
   display: none;
