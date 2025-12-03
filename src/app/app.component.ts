@@ -1,12 +1,11 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { CardService } from './services/card.service';
 import { Card } from './models/card.model';
-import { SlideComponent } from './component/slide/slide.component'; // Importa o SlideComponent
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  // Adiciona o SlideComponent aos imports
-  imports: [SlideComponent],
+  imports: [CommonModule, NgOptimizedImage],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -14,4 +13,21 @@ import { SlideComponent } from './component/slide/slide.component'; // Importa o
 export class AppComponent {
   private cardService = inject(CardService);
   public cards: Card[] = this.cardService.getCards();
+  public cardAtual = signal(0);
+
+  avancar(): void {
+    if (this.cardAtual() === this.cards.length - 1) {
+      this.cardAtual.set(0);
+    } else {
+      this.cardAtual.update(i => i + 1);
+    }
+  }
+
+  voltar(): void {
+    if (this.cardAtual() === 0) {
+      this.cardAtual.set(this.cards.length - 1);
+    } else {
+      this.cardAtual.update(i => i - 1);
+    }
+  }
 }

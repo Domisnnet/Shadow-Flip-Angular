@@ -12,7 +12,7 @@ export class CardService {
       name: 'Cosmos Sentinel, o Guardião Galáctico',
       fundo: 'fundo-1',
       nivel: 5,
-      image: 'cosmos.jpg',
+      image: 'cosmos-sentinel.png', 
       alt: 'Cosmos Sentinel, o Guardião Galáctico',
       descricao:
         'Forjado no coração de uma nebulosa, este guerreiro cibernético é a personificação da harmonia, usando seu escudo para repelir o caos.',
@@ -25,7 +25,7 @@ export class CardService {
       name: 'Nebuladragon, o Ser das Estrelas Eternas',
       fundo: 'fundo-2',
       nivel: 7,
-      image: 'knight.jpg',
+      image: 'nebuladragon.png', 
       alt: 'Nebuladragon, o Ser das Estrelas Eternas',
       descricao:
         'Uma criatura mítica nascida da fusão de nebulosas. Suas escamas brilham com a luz de sóis distantes e seu sopro pode forjar galáxias.',
@@ -38,7 +38,7 @@ export class CardService {
       name: 'Cyberblade Paladin, o Cavaleiro Digital',
       fundo: 'fundo-3',
       nivel: 3,
-      image: 'cyberblade.jpg',
+      image: 'cyberblade-paladin.png', 
       alt: 'Cyberblade Paladin, o Cavaleiro Digital',
       descricao:
         'Armado com a lendária Cyberblade, este cavaleiro é um protetor jurado dos reinos digitais, defendendo os dados do mainframe universal.',
@@ -51,7 +51,7 @@ export class CardService {
       name: 'Mechadragon X, o Destruidor Biomecânico',
       fundo: 'fundo-4',
       nivel: 7,
-      image: 'mechadragon.jpg',
+      image: 'mechadragon.png', 
       alt: 'Mechadragon X, o Destruidor Biomecânico',
       descricao:
         'Uma fusão de biologia dracônica e engenharia cibernética. Seus canhões de plasma foram criados para vaporizar asteroides.',
@@ -64,7 +64,7 @@ export class CardService {
       name: 'Archmage Stellarion, o Guardião das Estrelas',
       fundo: 'fundo-5',
       nivel: 3,
-      image: 'magnus.jpg',
+      image: 'archmage.png', 
       alt: 'Archmage Stellarion, o Guardião das Estrelas',
       descricao:
         'Um mago que manipula as forças do cosmos para proteger o equilíbrio, tecendo feitiços poderosos com poeira estelar.',
@@ -77,7 +77,7 @@ export class CardService {
       name: 'Aegis Knight, o Guardião do Firmamento',
       fundo: 'fundo-6',
       nivel: 4,
-      image: 'aegis.jpg',
+      image: 'aegis-knight.png', 
       alt: 'Aegis Knight, o Guardião do Firmamento',
       descricao:
         'Vestindo uma armadura forjada com fragmentos de estrelas, Aegis Knight é um bastião de defesa, capaz de resistir a qualquer ataque.',

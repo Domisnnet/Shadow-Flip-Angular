@@ -1,1 +1,37 @@
-<app-slide></app-slide>
+<main>
+  <button class="btn-seta btn-voltar" (click)="voltar()">
+    <img ngSrc="assets/images/seta.png" alt="Voltar" width="45" height="45" />
+  </button>
+
+  <div class="cartoes">
+    @for (card of cards; track card.id; let i = $index) {
+      <div class="cartao" [class.selecionado]="i === cardAtual()">
+        <div class="card-inner">
+          <div class="info-topo">
+            <h2 class="nome">{{ card.name }}</h2>
+            <p class="nivel">Nível: {{ card.nivel }}</p>
+          </div>
+
+          <div class="imagem-container">
+            <img 
+              class="imagem-personagem"
+              [ngSrc]="'assets/images/' + card.image" 
+              [alt]="card.alt" 
+              width="300" 
+              height="300" 
+            />
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">{{ card.descricao }}</p>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+
+  <button class="btn-seta btn-avancar" (click)="avancar()">
+    <img ngSrc="assets/images/seta.png" alt="Avançar" width="45" height="45" />
+  </button>
+</main>
