@@ -7,7 +7,6 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
   selector: 'app-root',
   imports: [CommonModule, NgOptimizedImage],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {

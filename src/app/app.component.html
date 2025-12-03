@@ -1,37 +1,42 @@
-<main>
+<div class="slider">
   <button class="btn-seta btn-voltar" (click)="voltar()">
-    <img ngSrc="assets/images/seta.png" alt="Voltar" width="45" height="45" />
+    <img src="assets/images/seta.png" alt="Voltar" class="icon-seta">
   </button>
 
-  <div class="cartoes">
+  <div class="lista-personagens">
     @for (card of cards; track card.id; let i = $index) {
-      <div class="cartao" [class.selecionado]="i === cardAtual()">
-        <div class="card-inner">
-          <div class="info-topo">
-            <h2 class="nome">{{ card.name }}</h2>
-            <p class="nivel">Nível: {{ card.nivel }}</p>
-          </div>
+      <div 
+        class="cartao {{ 'fundo-' + (i + 1) }}" 
+        [class.selecionado]="i === cardAtual()"
+      >
+        <h2 class="nome">{{ card.name }}</h2>
+        
+        <div class="nivel-carta">
+          @for (n of [].constructor(card.nivel); track $index) {
+            <div class="estrela"></div>
+          }
+        </div>
 
-          <div class="imagem-container">
-            <img 
-              class="imagem-personagem"
-              [ngSrc]="'assets/images/' + card.image" 
-              [alt]="card.alt" 
-              width="300" 
-              height="300" 
-            />
-          </div>
+        <img 
+          class="imagem-carta" 
+          [ngSrc]="'assets/images/' + card.image" 
+          [alt]="card.alt" 
+          width="260" 
+          height="280"
+          priority
+        >
 
+        <div class="informacoes">
           <div class="descricao">
-            <h3 class="titulo">Descrição</h3>
-            <p class="texto">{{ card.descricao }}</p>
+            <p>{{ card.descricao }}</p>
           </div>
         </div>
+
       </div>
     }
   </div>
 
-  <button class="btn-seta btn-avancar" (click)="avancar()">
-    <img ngSrc="assets/images/seta.png" alt="Avançar" width="45" height="45" />
+  <button class="btn-seta" (click)="avancar()">
+    <img src="assets/images/seta.png" alt="Avançar" class="icon-seta">
   </button>
-</main>
+</div>
