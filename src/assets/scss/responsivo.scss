@@ -32,23 +32,17 @@
     }
 
     .btn-seta.btn-voltar {
-        left: 25%; 
+        left: 10%; 
         right: auto; 
     }
 
     .btn-seta.btn-avancar {
         left: auto; 
-        right: 25%; 
+        right: 10%; 
     }
 }
 
 @media(max-width: 375px) {
-    body {
-        justify-content: start;
-        padding-top: 10px;
-        gap: 10px;
-    }
-
     .cabecalho {
         font-size: 18px; 
         margin-top: 5px;
