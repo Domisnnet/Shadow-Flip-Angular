@@ -105,6 +105,7 @@ Os arquivos serão gerados na pasta `dist/`.
 ### 🐛 Encontrou um problema?
 
 [![Issues Abertas](https://img.shields.io/github/issues/Domisnnet/Shadow-Flip-Angular?style=flat-square\&color=red\&logo=github)](https://github.com/Domisnnet/Shadow-Flip-Angular/issues)
+[![Report Bug](https://img.shields.io/badge/Reportar-Erro-critical?style=flat-square&logo=github)](https://github.com/Domisnnet/Shadow-Flip-Angular/issues/new)
 
 ---
 
