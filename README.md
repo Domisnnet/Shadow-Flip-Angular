@@ -8,7 +8,7 @@
 ![Tecnologias](https://img.shields.io/badge/Tecnologias-Angular%20%7C%20TypeScript%20%7C%20SCSS-red)
 [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Shadow-Flip-Angular/blob/main/LICENSE)
 
-![Shadow-Flip-Oh Angular](public/images/shadow-flip.png)
+![Shadow-Flip-Oh Angular](src/images/shadow-flip.png)
 
 **Shadow-Flip-Angular** é a versão em Angular do jogo da memória inspirado em Yu-Gi-Oh!, focado em performance, arquitetura escalável e experiências interativas modernas.
 
