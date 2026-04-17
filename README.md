@@ -81,7 +81,7 @@ O projeto está disponível para jogar online nos seguinte link:
 
 | Plataforma | Status | Link de Acesso direto para o Jogo: |
 | :--- | :---: | :--- |
-| **Firebase Hosting** | ![Status](https://img.shields.io/badge/Online-brightgreen?style=flat-square) | [![Firebase Hosting](https://img.shields.io/badge/GitHub_Pages-222222?style=flat-square&logo=github&logoColor=white)](https://studio-8738608268-935f4.web.app/)
+| **Firebase Hosting** | ![Status](https://img.shields.io/badge/Online-brightgreen?style=flat-square) | [![Firebase Hosting](https://img.shields.io/badge/Firebase_Hosting-222222?style=flat-square&logo=github&logoColor=white)](https://studio-8738608268-935f4.web.app/)
 
 ---
 
