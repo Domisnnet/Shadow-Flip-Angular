@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myapp": {
+    "shadow-flip-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/shadow-flip-angular",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -57,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "myapp:build:production"
+              "buildTarget": "shadow-flip-angular:build:production"
             },
             "development": {
-              "buildTarget": "myapp:build:development"
+              "buildTarget": "shadow-flip-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
