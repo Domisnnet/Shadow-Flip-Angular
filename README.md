@@ -8,7 +8,7 @@
 ![Tecnologias](https://img.shields.io/badge/Tecnologias-Angular%20%7C%20TypeScript%20%7C%20SCSS-red)
 [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Shadow-Flip-Angular/blob/main/LICENSE)
 
-![Shadow-Flip-Oh Angular](src/images/shadow-flip.png)
+![Shadow-Flip-Oh Angular](src/assets/images/shadow-flip.png)
 
 **Shadow-Flip-Angular** é a versão em Angular do jogo da memória inspirado em Yu-Gi-Oh!, focado em performance, arquitetura escalável e experiências interativas modernas.
 
@@ -60,23 +60,19 @@
 <h2 id="5-instalação-e-execução-local">5. 🛠️ Instalação e Execução Local</h2>
 
 ```bash
-# Clone o repositório
+# 1. Clone o repositório
 git clone https://github.com/Domisnnet/Shadow-Flip-Angular.git
-
-# Acesse a pasta
 cd Shadow-Flip-Angular
 
-# Instale as dependências
+# 2. Instale as dependências
 npm install
 
-# Execute o projeto
-ng serve
+# 3. Inicie o servidor de desenvolvimento
+npm start
+
+# 4. Abra no navegador
+# Acesse http://localhost:4200
 ```
-
-💻 Execução Local:
-
-O jogo ficará disponível em:
-http://localhost:4200/
 
 > ⚠️ Observação: a aplicação recarrega automaticamente ao salvar alterações.
 
@@ -165,5 +161,5 @@ O **Shadow-Flip-Angular** combina nostalgia e arquitetura moderna com Angular.
 Para conhecer meu Repositório:
 
 <a href="https://github.com/Domisnnet"> 
-  <img src="public/images/DomisDev.png" width="90" alt="Acessar perfil GitHub"> 
+  <img src="src/assets/images/DomisDev.png" width="90" alt="Acessar perfil GitHub"> 
 </a>
