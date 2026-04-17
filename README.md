@@ -69,7 +69,8 @@ ng serve
 
 # 💻 Execução Local
 
-O jogo ficará disponível em http://localhost:4200
+O jogo ficará disponível em http://localhost:4200(http://localhost:4200)
+> ⚠️ Observação: a porta pode variar dependendo do ambiente.
 ```
 
 ---
