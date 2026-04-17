@@ -8,7 +8,7 @@
 ![Tecnologias](https://img.shields.io/badge/Tecnologias-Angular%20%7C%20TypeScript%20%7C%20SCSS-red)
 [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Shadow-Flip-Angular/blob/main/LICENSE)
 
-![Shadow-Flip-Oh Angular](src/assets/images/shadow-flip.png)
+![Shadow-Flip-Oh Angular](https://raw.githubusercontent.com/Domisnnet/Shadow-Flip-Angular/main/src/assets/images/shadow-flip.png)
 
 **Shadow-Flip-Angular** é a versão em Angular do jogo da memória inspirado em Yu-Gi-Oh!, focado em performance, arquitetura escalável e experiências interativas modernas.
 
@@ -62,17 +62,21 @@
 ```bash
 # 1. Clone o repositório
 git clone https://github.com/Domisnnet/Shadow-Flip-Angular.git
+
+# 2. Acesse a pasta
 cd Shadow-Flip-Angular
 
-# 2. Instale as dependências
+# 3. Instale as dependências
 npm install
 
-# 3. Inicie o servidor de desenvolvimento
-npm start
-
-# 4. Abra no navegador
-# Acesse http://localhost:4200
+# 4. Execute o projeto
+ng serve
 ```
+
+💻 Execução Local:
+
+O jogo ficará disponível em:
+http://localhost:4200/
 
 > ⚠️ Observação: a aplicação recarrega automaticamente ao salvar alterações.
 
@@ -105,7 +109,7 @@ Os arquivos serão gerados na pasta `dist/`.
 ### 🐛 Encontrou um problema?
 
 [![Issues Abertas](https://img.shields.io/github/issues/Domisnnet/Shadow-Flip-Angular?style=flat-square\&color=red\&logo=github)](https://github.com/Domisnnet/Shadow-Flip-Angular/issues)
-[![Report Bug](https://img.shields.io/badge/Reportar-Erro-critical?style=flat-square&logo=github)](https://github.com/Domisnnet/Shadow-Flip-Angular/issues/new)
+[![Report Bug](https://img.shields.io/badge/Reportar-Erro-critical?style=flat-square\&logo=github)](https://github.com/Domisnnet/Shadow-Flip-Angular/issues/new)
 
 ---
 
@@ -162,5 +166,5 @@ O **Shadow-Flip-Angular** combina nostalgia e arquitetura moderna com Angular.
 Para conhecer meu Repositório:
 
 <a href="https://github.com/Domisnnet"> 
-  <img src="src/assets/images/DomisDev.png" width="90" alt="Acessar perfil GitHub"> 
+  <img src="https://raw.githubusercontent.com/Domisnnet/Shadow-Flip-Angular/main/src/assets/images/DomisDev.png" width="90" alt="Acessar perfil GitHub"> 
 </a>
