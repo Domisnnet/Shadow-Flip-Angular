@@ -133,7 +133,9 @@ Adicione este projeto ao seu "deck" de desenvolvedor!
 
 Gostou do jogo? Explore o código:
 
-[![Repositório](https://img.shields.io/badge/Repositório-Domisnnet%2FShadow--Flip--Angular-blue?style=for-the-badge&logo=github&labelColor=0d1117)](https://domisnnet.github.io/Shadow-Flip-Angular/)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=fff)
+[![Repositório](https://img.shields.io/badge/Acessar%20Projeto-Domisnnet%2FShadow--Flip--Angular-DD0031?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/Domisnnet/Shadow-Flip-Angular)
+
 
 
 ---
