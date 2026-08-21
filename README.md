@@ -167,3 +167,10 @@ Para conhecer meu Repositório:
 <a href="https://github.com/Domisnnet"> 
   <img src="src/assets/images/DomisDev.png" width="90" alt="Acessar perfil GitHub"> 
 </a>
+
+&nbsp;
+<p align="center">
+  <a href="#sobre-o-projeto">
+    <img src="https://img.shields.io/badge/⬆️%20VOLTAR%20AO%20TOPO-26FF00?style=flat&labelColor=111827&color=0A0F1C" alt="Voltar ao topo" style="height: 30px;">
+  </a>
+</p>
